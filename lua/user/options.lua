@@ -16,3 +16,4 @@ vim.opt.expandtab = true
 vim.opt.ignorecase = true
 vim.opt.smartindent = true
 vim.opt.signcolumn = "yes"
+vim.opt.termguicolors = true
