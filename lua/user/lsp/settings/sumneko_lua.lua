@@ -1,7 +1,24 @@
 return {
 	settings = {
-
 		Lua = {
+      format = {
+        enable = false,
+      },
+      hint = {
+        enable = true,
+        arrayIndex = "Disable",
+        await = true,
+        paramName = "Disable",
+        paramType = false,
+        semicolon = "Disable",
+        setType = true,
+      },
+      runtime = {
+        version = "LuaJIT",
+        special = {
+          reload = "require",
+        },
+      },
 			diagnostics = {
 				globals = { "vim" },
 			},
@@ -11,6 +28,9 @@ return {
 					[vim.fn.stdpath("config") .. "/lua"] = true,
 				},
 			},
+      telemetry = {
+        enable = false,
+      },
 		},
 	},
 }
