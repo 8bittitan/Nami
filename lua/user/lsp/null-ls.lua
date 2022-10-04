@@ -10,8 +10,9 @@ local diagnostics = null_ls.builtins.diagnostics
 null_ls.setup {
   debug = false,
   sources = {
-    formatting.prettier,
+--    formatting.prettier_d_slim,
     formatting.stylua,
-    diagnostics.eslint,
+    formatting.gofmt,
+    diagnostics.eslint_d,
   },
 }

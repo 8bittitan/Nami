@@ -40,10 +40,11 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim"
   use "nvim-lua/popup.nvim"
   use "nvim-lua/plenary.nvim"
-  use 'kyazdani42/nvim-web-devicons'
+  use "kyazdani42/nvim-web-devicons"
+  use "christianchiarulli/lua-dev.nvim"
 
   -- Nvim Tree
-  use 'kyazdani42/nvim-tree.lua'
+  use "kyazdani42/nvim-tree.lua"
 
   -- Colorscheme
   use "folke/tokyonight.nvim"
@@ -63,8 +64,13 @@ return packer.startup(function(use)
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
-  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  --use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "jose-elias-alvarez/null-ls.nvim"
+  use "lvimuser/lsp-inlayhints.nvim"
+  use "https://git.sr.ht/~whynothugo/lsp_lines.nvim"
+  use "ray-x/lsp_signature.nvim"
+  use "williamboman/mason.nvim"
+  use "williamboman/mason-lspconfig.nvim"
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
