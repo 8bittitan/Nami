@@ -84,6 +84,11 @@ nvim_tree.setup {
         },
       },
     },
-    special_files = { "Cargo.toml", "Makefile", "README.md", "readme.md" },
+    special_files = { "Cargo.toml", "Makefile", "README.md", "readme.md", ".env" },
+  },
+  filters = {
+    custom = {
+      "^.git$"
+    },
   },
 }
