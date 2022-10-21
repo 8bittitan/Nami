@@ -64,7 +64,6 @@ return packer.startup(function(use)
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
-  --use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "jose-elias-alvarez/null-ls.nvim"
   use "lvimuser/lsp-inlayhints.nvim"
   use "https://git.sr.ht/~whynothugo/lsp_lines.nvim"
@@ -90,6 +89,8 @@ return packer.startup(function(use)
 
   -- Term
   use "akinsho/toggleterm.nvim"
+
+  use "ThePrimeagen/harpoon"
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()

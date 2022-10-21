@@ -1,7 +1,5 @@
 local opts = { noremap = true, silent = true }
 
-local term_opts = { silent = true }
-
 local keymap = vim.api.nvim_set_keymap
 
 keymap("", "<Space>", "<Nop>", opts)
@@ -40,5 +38,8 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("n", "<leader>ff", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ preview = false, hidden = true }))<cr>", opts)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
-keymap("n", "<leader>pv", ":NvimTreeToggle<cr>", opts)
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+
+-- Harpoon
+keymap("n", "<leader>a", "<cmd>lua require'harpoon.mark'.add_file()<cr>", opts)
+keymap("n", "<c-r>", "<cmd>lua require'harpoon.ui'.toggle_quick_menu()<cr>", opts)
